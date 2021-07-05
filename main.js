@@ -1,7 +1,7 @@
 const numberButtons = document.querySelectorAll('.value');
 const operationButtons = document.querySelectorAll('.operation');
 const mathProprieties = document.querySelectorAll('.math-function');
-const clearButton = querySelector('.clear');
+const clearButton = querySelector('#clear');
 const deleteButton = querySelector('.deletion');
 const topScreen = document.querySelector('.top-output');
 const downScreen = document.querySelector('.bottom-output');
@@ -12,8 +12,8 @@ class Calculator {
     this.downScreen = downScreen;
   }
   clear() {
-    this.topScreen.innerHTML = '';
-    this.downScreen.innerHTML = '';
+    this.topScreen.textContent = '';
+    this.downScreen.textContent = '';
     this.operation = undefined;
   }
 
@@ -42,3 +42,5 @@ numberButtons.forEach((button) => {
 clearButton.addEventListener('click', () => {
   calculator.clear();
 });
+
+

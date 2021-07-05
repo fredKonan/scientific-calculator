@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scientific Calculator</title>
     <link rel="stylesheet" href="/style.css">
-    <script src="/main.js" defer></script>
+    
 </head>
 
 <body>
     <div class="calculator">
         <div class="output">
-            <div class="top-output">789</div>
-            <div class="bottom-output">78</div>
+            <div class="top-output" id="top-output"></div>
+            <div class="bottom-output" id="bottom-output"></div>
         </div>
         <button id="btt-2nd">2nd</button>
         <button class="btt">DRG</button>
@@ -32,26 +32,26 @@
             <button>D</button>
 
         </div>
-        <button class="btt math-function"">LOG</button>
-        <button class=" btt math-function"">PRB</button>
-        <button class="btt math-function"">r-p</button>
-        <button class=" btt math-function"">LN</button>
+        <button class="btt math-function">LOG</button>
+        <button class=" btt math-function">PRB</button>
+        <button class="btt math-function">r-p</button>
+        <button class=" btt math-function">LN</button>
         <button class="btt">A^bc</button>
         <button class="btt">DATA</button>
         <button class="btt">SATVAR</button>
-        <button class="btt clear">CLEAR</button>
+        <button class="btt" id="clear">CLEAR</button>
         <button class="btt">PI</button>
         <button class="btt math-function">SIN</button>
-        <button class="btt math-function"">COS</button>
-        <button class=" btt math-function"">TAN</button>
+        <button class="btt math-function">COS</button>
+        <button class=" btt math-function">TAN</button>
         <button class="bttn operation">➗</button>
-        <button class="btt math-function"">√</button>
-        <button class=" btt math-function"">x-1</button>
+        <button class="btt math-function">√</button>
+        <button class=" btt math-function">x-1</button>
         <button data-parentheses class="btt">(</button>
         <button data-parentheses class="btt">)</button>
         <button class="bttn operation">x</button>
-        <button class="btt math-function"">x2</button>
-        <div class=" numbers">
+        <button class="btt math-function">x2</button>
+        <div class=" numbers" id="numbers">
             <button class="value">7</button>
             <button class="value">8</button>
             <button class="value">9</button>
@@ -73,6 +73,7 @@
     <button class="btt turn-on">ON</button>
 
     </div>
+    <script src="/main.js"></script>
 </body>
 
 </html>
