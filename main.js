@@ -1,8 +1,8 @@
 const numberButtons = document.querySelectorAll('.value');
 const operationButtons = document.querySelectorAll('.operation');
 const mathProprieties = document.querySelectorAll('.math-function');
-const clearButton = querySelector('#clear');
-const deleteButton = querySelector('.deletion');
+const clearButton = document.querySelector('#clear');
+const deleteButton = document.querySelector('.deletion');
 const topScreen = document.querySelector('.top-output');
 const downScreen = document.querySelector('.bottom-output');
 
@@ -42,5 +42,3 @@ numberButtons.forEach((button) => {
 clearButton.addEventListener('click', () => {
   calculator.clear();
 });
-
-
